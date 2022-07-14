@@ -12,9 +12,7 @@ github = Github(access_token)
 
 org = github.get_organization(organization_name)
 
-# Then play with your Github objects:
-# List
-team_name = ""
+# List repos
 for repo in org.get_repos():
     print("##")
     print(f'Name: {repo.name}')
